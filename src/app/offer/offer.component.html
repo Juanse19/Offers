@@ -1,0 +1,54 @@
+<!-- <div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="elemento limpiarEstilos">
+                <div class="elemento_descripcion">
+                    <div class="agregar_contenedor">
+                        <select class="form-select">
+                            <option *ngFor="let itemId of idData" value="itemId.id"  >{{ itemId.id }} </option>
+                        </select>
+                        <div class="card left">
+                            <label for="#">ID Oferta: <br></label>
+                            <input type="text" class="agregar_valor" placeholder="ID" name="ID">
+                            <label>Nombre:</label>
+                            <input type="text" class="agregar_valor" formControlName="nameData" placeholder="Nombre" name="Nombre">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6-left">
+                <app-characteristics></app-characteristics>
+                <app-prices></app-prices>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<form>
+    <div class="agregar">
+        <div class="agregar_contenedor">
+            <select class="agregar_tipo">
+                <option *ngFor="let itemId of idData" value="itemId.id"  >{{ itemId.id }} </option>
+            </select>
+            <label for="#">ID Oferta: <br></label>
+            <input type="text" class="agregar_valor" placeholder="ID Oferta" name="descripcionInput" required>
+            <label for="#">Nombre: <br></label>
+            <input type="text" class="agregar_valor" placeholder="Nombre" [(ngModel)]="OfferData">
+
+
+
+        </div>
+    </div>
+</form>
+<div class="col-lg-6-left">
+    <app-characteristics></app-characteristics>
+    <app-prices></app-prices>
+
+</div>

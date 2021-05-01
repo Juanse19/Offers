@@ -1,0 +1,21 @@
+<div class="ingreso">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="elemento_descripcion">
+                    <div class="elemento_valor">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                Caracteristicas
+                            </div>
+                            <ul class="list-group list-group-flush" *ngFor="let offer of chardata">
+                                <li class="list-group-item">{{ offer.versions[0].characteristics[0].versions[0].name }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

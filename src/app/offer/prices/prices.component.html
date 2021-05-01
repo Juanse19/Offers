@@ -1,0 +1,29 @@
+<div class="ingreso">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div>
+                    <div class="elemento_descripcion">
+                        <div class="card-header">
+                            Nombre Precio
+                        </div>
+                        <ul class="list-group list-group-flush" *ngFor="let offer of pricedata">
+                            <li class="list-group-item">{{ offer.versions[0].productOfferingPrices[0].versions[0].name }}</li>
+                        </ul>
+                    </div>
+                    <div class="right limpiarEstilos">
+                        <div class="card-header">
+                            Monto
+                        </div>
+                        <ul class="list-group list-group-flush" *ngFor="let offers of amountData">
+                            <li class="list-group-item">{{ offers.versions[0].productOfferingPrices[0].versions[0]?.price?.amount }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div class="card-header">
+    Nombre
+</div> -->
